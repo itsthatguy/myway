@@ -38,7 +38,9 @@ function setup_rvmrc {
   rvm gemset create $PROJECT_NAME &&
   echo "installing needed gems, this may take a while..."
   gem install bundler --no-rdoc --no-ri &&
-  bundle install
+  cd $PROJECT_NAME &&
+  bundle install &&
+  cd ..
 }
 
 function init_git {
