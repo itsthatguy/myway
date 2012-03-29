@@ -39,8 +39,9 @@ function setup_rvmrc {
   echo "installing needed gems, this may take a while..."
   gem install bundler --no-rdoc --no-ri &&
   cd $PROJECT_NAME &&
-  bundle install &&
-  cd ..
+  ls
+  #bundle install &&
+  #cd ..
 }
 
 function init_git {
