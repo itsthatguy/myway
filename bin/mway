@@ -28,13 +28,14 @@ function check_that_directory_does_not_already_exist {
 function create_new_project {
   git clone git@github.com:itsthatguy/myway $PROJECT_NAME &&
   cd $PROJECT_NAME &&
-  rm -rf .git/
+  rm -rf .git/ bin/ README.md &&
+  echo "# Middleman Blog starting point" > README.md
 }
 
 function setup_rvmrc {
   echo "rvm use 1.9.2-p290@$PROJECT_NAME" > .rvmrc &&
-  rvm use 1.9.2-p290@$PROJECT_NAME &&
-#  rvm gemset create $PROJECT_NAME &&
+  rvm use 1.9.2-p290 &&
+  rvm gemset create $PROJECT_NAME &&
   echo "installing needed gems, this may take a while..."
   gem install bundler --no-rdoc --no-ri &&
   bundle install
