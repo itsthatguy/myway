@@ -1,6 +1,6 @@
 # myway
 
-A sinatra.rb simple starting point and generator.
+A middleman-blog starting point and generator
 
 # Installation
 
@@ -19,7 +19,7 @@ Steps (In Terminal.app do the following commands):
 
 **2. Get the mway script and make it executable**
 
-    curl -o ~/bin/mway -L https://github.com/michaelparenteau/myway/raw/master/bin/mway  && chmod +x ~/bin/mway
+    curl -o ~/bin/mway -L https://github.com/itsthatguy/myway/raw/master/bin/mway  && chmod +x ~/bin/mway
 
 # Usage
 
