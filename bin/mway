@@ -25,15 +25,15 @@ function check_that_directory_does_not_already_exist {
   fi
 }
 
-function create_new_project {  
-  git clone git@github.com:michaelparenteau/myway $PROJECT_NAME &&
+function create_new_project {
+  git clone git@github.com:itsthatguy/myway $PROJECT_NAME &&
   cd $PROJECT_NAME &&
   rm -rf .git/
 }
 
 function setup_rvmrc {
-  echo "rvm use 1.9.2-p180@$PROJECT_NAME" > .rvmrc &&
-  rvm use 1.9.2-p180 &&
+  echo "rvm use 1.9.2-p290@$PROJECT_NAME" > .rvmrc &&
+  rvm use 1.9.2-p290 &&
   rvm gemset create $PROJECT_NAME &&
   echo "installing needed gems, this may take a while..."
   gem install bundler --no-rdoc --no-ri &&
