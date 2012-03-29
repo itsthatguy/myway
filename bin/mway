@@ -33,8 +33,8 @@ function create_new_project {
 
 function setup_rvmrc {
   echo "rvm use 1.9.2-p290@$PROJECT_NAME" > .rvmrc &&
-  rvm use 1.9.2-p290 &&
-  rvm gemset create $PROJECT_NAME &&
+  rvm use 1.9.2-p290@$PROJECT_NAME &&
+#  rvm gemset create $PROJECT_NAME &&
   echo "installing needed gems, this may take a while..."
   gem install bundler --no-rdoc --no-ri &&
   bundle install
