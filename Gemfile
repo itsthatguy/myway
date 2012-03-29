@@ -1,5 +1,5 @@
-source "http://rubygems.org"
-gem "rack"
-gem "sinatra", "1.1.2", :require => "sinatra"
-gem "haml"
-gem "sinatra-static-assets"
+source 'http://rubygems.org'
+
+gem 'middleman', '~>2.0.15.1'
+gem 'middleman-blog'
+gem 'slim'
