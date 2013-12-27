@@ -1,0 +1,23 @@
+{
+  "name": "itg.myway",
+  "version": "2.0.0",
+  "homepage": "https://github.com/itsthatguy/myway",
+  "authors": [
+    "Kevin Altman <kevin@itsthatguy.com>"
+  ],
+  "description": "My preferred middleman setup",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.0.3",
+    "requirejs": "~2.1.9",
+    "foundation": "~5.0.2"
+  }
+}

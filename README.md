@@ -1,6 +1,6 @@
 # myway
 
-A middleman-blog starting point and generator
+A middleman starting point and generator
 
 # Installation
 
