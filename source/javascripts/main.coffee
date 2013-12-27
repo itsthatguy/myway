@@ -1,21 +1,33 @@
 # Nothing to see here
-#= require "vendor/zepto"
-#= require "foundation/foundation"
-#= require "foundation/foundation.topbar"
+#= require "jquery/jquery.min"
+#= require "requirejs/require"
+# // require "foundation/foundation"
+# // require "foundation/foundation.topbar"
 
 
-class Main
-  constructor: () ->
-    @setupFoundation()
+requirejs.config
+  baseUrl: '/javascripts'
+  paths:
+    # "package_name_here": "../bower_components/path_here"
 
-  setupFoundation: () ->
-    $(document).foundation
-      index : 0,
-      custom_back_text: true,
-      back_text: 'Back',
-      is_hover: true,
-      scrolltop : true,
-      init : false
+require ['utilities'], (Utilities) ->
+  class Main extends Utilities
+
+    logging: false
+
+    constructor: ->
+      # @setupFoundation()
+      @log "Main::constructor ->"
+      @router = new Router()
+
+    setupFoundation: ->
+      $(document).foundation
+        index : 0
+        custom_back_text: true
+        back_text: 'Back'
+        is_hover: true
+        scrolltop : true
+        init : false
 
 
-window.Main = new Main()
+  $ -> window.Main = new Main()
