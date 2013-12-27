@@ -7,10 +7,8 @@
 
 requirejs.config
   baseUrl: '/javascripts'
-  paths:
-    # "package_name_here": "../bower_components/path_here"
 
-require ['utilities'], (Utilities) ->
+require ['utilities', 'router'], (Utilities, Router) ->
   class Main extends Utilities
 
     logging: false
