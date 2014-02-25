@@ -1,8 +1,17 @@
 @charset "UTF-8";
 @import "compass/css3";
 @import "compass/reset";
-@import "partials/colors";
-@import "partials/fonts";
+
+// config
+@import "config/colors";
+@import "config/fonts";
+@import "config/icons";
+
+
+// My lyberries
+@import "lib/functions";
+@import "lib/animation-mixins";
+@import "lib/icon-factory";
 
 // Global Foundation Settings
 @import "settings";

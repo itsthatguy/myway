@@ -1,4 +1,6 @@
 .bundle
 .sass-cache
 public/.sass-cache
-bower_components/
+node_modules
+.grunt
+*.log

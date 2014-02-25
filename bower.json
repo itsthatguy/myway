@@ -1,6 +1,6 @@
 {
   "name": "itg.myway",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "homepage": "https://github.com/itsthatguy/myway",
   "authors": [
     "Kevin Altman <kevin@itsthatguy.com>"
@@ -16,8 +16,8 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "~2.0.3",
-    "requirejs": "~2.1.9",
-    "foundation": "~5.0.2"
+    "jquery": "~2.1.0",
+    "requirejs": "^2.1.11",
+    "foundation": "^5.1.1"
   }
 }
