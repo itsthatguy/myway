@@ -16,7 +16,7 @@ Steps (In Terminal.app do the following commands):
 
     mkdir ~/bin && echo "export PATH=$PATH:$HOME/bin" >> ~/.bash_profile && source ~/.bash_profile
 
-**2. Download your own version of mway, and create a symlink to the bash script
+**2. Download your own version of mway, and create a symlink to the bash script**
 
 ```
 git clone https://github.com/itsthatguy/myway.git
