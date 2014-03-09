@@ -20,17 +20,12 @@
   @if $fixed { background-attachment: fixed; }
 }
 
-%yellow-section {
-  color: $black;
-  background-color: $yellow;
-}
 %off-black-section {
   color: $white;
   background-color: $off-black;
 }
 %black-section {
   color: $white;
-  @extend %yellow-on-black-link;
   background-color: $black;
 }
 %off-white-section {
@@ -45,7 +40,6 @@
 %centered-section { text-align: center; }
 
 section {
-  &.yellow { @include section(yellow); }
   &.off-black { @include section(off-black); }
   &.black { @include section(black); }
   &.off-white { @include section(off-white); }
