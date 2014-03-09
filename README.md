@@ -30,3 +30,9 @@ chmod +x ~/bin/mway
 To start a new project based on the myway template:
 
     mway <name of project>
+
+
+Running
+
+    cd <name of project>
+    bundle exec middleman
