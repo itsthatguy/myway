@@ -4,3 +4,5 @@ public/.sass-cache
 node_modules
 .grunt
 *.log
+
+.DS_Store
