@@ -40,4 +40,4 @@ Running
 
 Browsing
 
-> navigate your browsing device to: http://localhost:4567
+> navigate your browsing device to: **http://localhost:4567/**
