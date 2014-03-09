@@ -29,20 +29,24 @@ function create_new_project {
   git clone git@github.com:itsthatguy/myway $PROJECT_NAME &&
   cd $PROJECT_NAME &&
   rm -rf .git/ bin/ README.md &&
-  echo "# Middleman Blog starting point" > README.md
+  echo "# Middleman starting point" > README.md
 }
 
 function setup_gems {
   echo "installing needed gems, this may take a while..."
-  gem install bundler --no-rdoc --no-ri &&
-  cd $PROJECT_NAME &&
-  ls
+  [[ ! $(gem list bundler -i) == true ]] && gem install bundler --no-rdoc --no-ri;
+  [[ ! $(basename $PWD) == $PROJECT_NAME ]] && cd $PROJECT_NAME;
+  bundle install --quiet;
+  echo "Gems installed...";
+  bower install --quiet;
+  echo "Bower components installed...";
+  ls;
 }
 
 function init_git {
-  git init &&
-  git add . &&
-  git ci -am "first commit"
+  git init --quiet;
+  git add .;
+  git commit --all --message="first commit" --quiet;
 }
 
 
