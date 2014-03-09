@@ -36,3 +36,8 @@ Running
 
     cd <name of project>
     bundle exec middleman
+
+
+Browsing
+
+> navigate your browsing device to: http://localhost:4567
