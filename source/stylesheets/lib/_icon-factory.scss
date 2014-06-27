@@ -10,10 +10,10 @@
 
 
 @include font-face($icon-name, font-files( "#{$icon-path}#{$icon-name}.eot",
-                                             "#{$icon-path}#{$icon-name}.eot?#iefix",
-                                             "#{$icon-path}#{$icon-name}.woff",
-                                             "#{$icon-path}#{$icon-name}.ttf",
-                                             "#{$icon-path}#{$icon-name}.svg#kofunction"));
+                                           "#{$icon-path}#{$icon-name}.eot?#iefix",
+                                           "#{$icon-path}#{$icon-name}.woff",
+                                           "#{$icon-path}#{$icon-name}.ttf",
+                                           "#{$icon-path}#{$icon-name}.svg#kofunction"));
 
 %icon-font {
   font-family: $icon-name;
@@ -31,10 +31,6 @@
   @extend %icon-font;
   content: attr(data-icon);
 }
-
-
-$spinners: blue url(asset_path('blue_spinny.gif')),
-           green url(asset_path('green_spinny.gif'));
 
 @mixin icon($icon) {
   $char-code: get-list-value($icons, $icon);
